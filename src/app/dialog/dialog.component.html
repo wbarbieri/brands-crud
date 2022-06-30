@@ -1,0 +1,38 @@
+<h1 mat-dialog-title>Add Brand</h1>
+<div mat-dialog-content>
+    <form [formGroup]= "brandsFrom">
+        <mat-form-field appearance="outline">
+            <mat-label>Name</mat-label>
+            <input formControlName="diagName" matInput placeholder="Name">
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Country</mat-label>
+            <mat-select  formControlName="diagCountry" placehollder="Country">
+                <mat-option value="EUA"> United States</mat-option>
+                <mat-option value="FRANCE"> France</mat-option>
+                <mat-option value="INDIA"> India</mat-option>
+                <mat-option value="CHINA"> China</mat-option>
+                <mat-option value="MEXICO"> Mexico</mat-option>
+            </mat-select>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Foundation</mat-label>
+            <input formControlName="diagDate" matInput [matDatepicker]="picker">
+            <mat-hint>MM/DD/YYYY</mat-hint>
+            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Value</mat-label>
+            <input formControlName="diagValue" matInput type="number" placeholder="Value">
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Industry</mat-label>
+           <textarea formControlName="diagIndustry" matInput name="Industry"></textarea>
+        </mat-form-field>
+    </form>
+</div>
+<div mat-dialog-actions [align]="'end'">
+    <button mat-raised-button color="warn" mat-dialog-close="Close">Close</button>
+    <button mat-raised-button color="primary" (click)="addbrands()">{{actionBtn}}</button>
+</div>

@@ -1,0 +1,62 @@
+{
+  "brandList": [
+    {
+      "diagName": "Apple",
+      "diagCountry": "EUA",
+      "diagValue": 241.2,
+      "diagIndustry": "Technology",
+      "diagDate": "1976-04-01T03:00:00.000Z",
+      "id": 1
+    },
+    {
+      "diagName": "Google",
+      "diagCountry": "EUA",
+      "diagValue": 207.5,
+      "diagIndustry": "Technology",
+      "diagDate": "1998-09-04T03:00:00.000Z",
+      "id": 2
+    },
+    {
+      "diagName": "Microsoft",
+      "diagCountry": "EUA",
+      "diagValue": 162.9,
+      "diagIndustry": "Technology",
+      "diagDate": "1975-04-04T03:00:00.000Z",
+      "id": 3
+    },
+    {
+      "diagName": "Amazon",
+      "diagCountry": "EUA",
+      "diagValue": 135.4,
+      "diagIndustry": "Technology",
+      "diagDate": "1994-07-05T03:00:00.000Z",
+      "id": 4
+    },
+    {
+      "diagName": "Facebook",
+      "diagCountry": "EUA",
+      "diagValue": 70.3,
+      "diagIndustry": "Technology",
+      "diagDate": "2004-02-04T02:00:00.000Z",
+      "id": 5
+    },
+    {
+      "diagName": "Coca-Cola",
+      "diagCountry": "EUA",
+      "diagValue": 64.4,
+      "diagIndustry": "Beverages",
+      "diagDate": "2022-06-02T03:00:00.000Z",
+      "id": 6
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
